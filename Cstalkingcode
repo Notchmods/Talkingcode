@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+//Go to references and turn on Speech Synthesis
+using System.speech.synthesis
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+    //Declare Speech Synthesiser as a variable
+  SpeechSynthesizer SpeechSynthesis = new SpeechSynthesizer();
+        public Form1()
+        {
+            InitializeComponent();
+            //Make it say something
+            SpeechSynthesis.Speak("Hallo welt");
+        }
+    }
+}
